@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+  {% block nav_block %}
+  <li><a class="navbar-brand" href="{%url 'index'%}">BRAND</a></li>
+  <li><a class="navbar-link" href="{%url 'admin:index'%}">Admin</a></li>
+  <li><a class="navbar-link" href="{%url 'index'%}">Index</a></li>
+  {% endblock %}
+  {% block body_block %}
+    <h1>Welcome to the other page!</h1>
+    <h2>This is an example of template inheritance</h2>
+  {% endblock %}
